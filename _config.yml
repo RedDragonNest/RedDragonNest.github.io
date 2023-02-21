@@ -81,17 +81,17 @@ analytics:
 
 
 ### Defaults for collections ###
-defaults:
+#defaults:
 #  - scope:
 #      path: ""
 #      type: "projects"
 #    values:
 #      layout: "page"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: false                                   # Set to true to enable disqus comments
+#  - scope:
+#      path: ""
+#      type: "posts"
+#    values:
+#      comments: false                                   # Set to true to enable disqus comments
 
 
 ### Exclude from processing ###
