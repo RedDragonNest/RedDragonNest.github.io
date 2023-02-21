@@ -52,10 +52,10 @@ permalink: /blog/:title
 
 
 ### Collections ###
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name
+# collections:
+#  projects:
+#    output: true
+#    permalink: /projects/:name
 
 
 ### Disqus ###
@@ -82,11 +82,11 @@ analytics:
 
 ### Defaults for collections ###
 defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "page"
+#  - scope:
+#      path: ""
+#      type: "projects"
+#    values:
+#      layout: "page"
   - scope:
       path: ""
       type: "posts"
