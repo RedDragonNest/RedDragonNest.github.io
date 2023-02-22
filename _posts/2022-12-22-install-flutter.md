@@ -2,7 +2,7 @@
 title: Flutter 설치하기 (feat. Android Studio / Mac)
 tags: [Flutter, Android Studio, Mac, M1]
 style: fill
-color: blue
+color: info
 description: Flutter를 설치해보자
 ---
 
