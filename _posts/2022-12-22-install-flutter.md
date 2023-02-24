@@ -97,6 +97,8 @@ export PATH=/Users/dragon/Documents/flutter/bin:$PATH  <- [pwd결과]/flutter/bi
 > source ~/.zshrc
 
 
+***   
+
 ## 동작확인 및 에러 대응
 
 터미널에서 `flutter doctor`를 입력하면 Flutter를 사용할 수 있는 환경인지 알아낼 수 있다.   
@@ -105,6 +107,7 @@ export PATH=/Users/dragon/Documents/flutter/bin:$PATH  <- [pwd결과]/flutter/bi
 
 + cmdline-tools component is missing
 > Android Studio SDK Manager → Appearance & Behavior → System Settings → Android SDK → SDK Tools → Android SDK Command-line Tools
+
 위의 경로에 해당하는 부분을 체크한 후 Apply하여 설정해주자.   
 {% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2022-12-22-install-flutter/install_flutter_9.png" %}
 {% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2022-12-22-install-flutter/install_flutter_10.png" caption="두번째 라인을 확실히 변경하자" %}
@@ -112,6 +115,7 @@ export PATH=/Users/dragon/Documents/flutter/bin:$PATH  <- [pwd결과]/flutter/bi
 + Android license status unknown
 터미널에 다음을 입력하자.
 > flutter doctor --android-licenses
+
 그러면 이것저것 허락해달라고 하는데, 어차피 우리는 y만 눌러야 한다. :)   
 
 + CocoaPods not installed
@@ -135,13 +139,14 @@ Android Studio에서 iOS 에뮬레이터로 실행하려 할 때 오류가 뜬�
 
 + Flutter로 만든 어플리케이션을 실행하려 했으나 디바이스와 Run버튼이 비활성화 되어 있을 경우
 > Android Studio → Preferences → Languages & Frameworks → Flutter → Flutter SDK path
+
 위로 들어가서 4번에 해당하는 경로로 설정해주자.   
 {% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2022-12-22-install-flutter/install_flutter_11.png" caption="4번에 해당하는 경로로 설정" %}
 
 + SDK 경로를 잘 설정했으나, 디바이스만 잡아지고 실행버튼이 활성화되지 않을 경우
 {% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2022-12-22-install-flutter/install_flutter_12.png" %}
 
-이를 해결하기 위해서는 실행하고자 하는 ~.dart (runApp 함수가 들어있는) 파일에서 우클릭 후 Run '~.dart'를 클릭하면 실행되면서 자동으로 Run버튼도 활성화된다.   
+이를 해결하기 위해서는 실행하고자 하는 ~.dart (아마 runApp 함수가 들어있는) 파일에서 우클릭 후 Run '~.dart'를 클릭하면 실행되면서 자동으로 Run버튼도 활성화된다.   
 {% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2022-12-22-install-flutter/install_flutter_13.png" %}
 
 
