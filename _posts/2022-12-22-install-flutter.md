@@ -68,3 +68,31 @@ Flutter를 설치하면 자연스럽게 Flutter 개발언어인 Dart도 설치�
 {% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/2683d6b5db71ee783f7a86113409bf85c79e75f4/assets/2022-12-22-install-flutter/install_flutter_6.png" caption="Dart도 같이 설치하자" %}
 
 
+## 7. PATH 설정
+
+환경설정을 등록하기 위해서는 먼저 4번에서 설치한 Flutter SDK를 압축해제한 폴더 위치가 필요합니다.
+터미널을 실행한 후 위치를 확인합니다.
+
+> ls 입력하여 flutter 폴더 확인 -> pwd 입력하여 경로 확인
+
+{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/2683d6b5db71ee783f7a86113409bf85c79e75f4/assets/2022-12-22-install-flutter/install_flutter_7.png" caption="pwd 결과를 복사해놓자" %}
+
+위치를 확인했다면 다시 터미널을 실행합니다.
+그리고 다음과 같이 입력하면 환경설정을 편집할 수 있습니다.
+
+> vim ~/.zshrc
+
+환경설정 파일 안에 다음과 같이 입력해줍니다. 입력 커서가 나오지 않고 아무글도 써지지 않는다면 `i`를 눌러 INSERT 모드인 상태로 변경해줍니다.
+
+```
+export PATH=/opt/homebrew/bin:$PATH
+export PATH=/Users/dragon/Documents/flutter/bin:$PATH  <- [pwd결과]/flutter/bin:$PATH 입력
+```
+
+{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/2683d6b5db71ee783f7a86113409bf85c79e75f4/assets/2022-12-22-install-flutter/install_flutter_8.png" caption="두번째 라인을 확실히 변경하자" %}
+
+두번째 라인에 해당하는 공간에 pwd결과를 넣어줍니다. 그리고 `esc`를 눌러 INSERT 모드에서 벗어난 뒤 `:wq`를 입력하여 저장합니다.
+환경설정 파일을 편집하고 저장하였다면 다음의 명령어를 입력하여 리프레시 해줍니다.
+
+> source ~/.zshrc
+
