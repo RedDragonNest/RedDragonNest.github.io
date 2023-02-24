@@ -91,13 +91,6 @@ analytics:
 #    values:
 #      comments: false                                   # Set to true to enable disqus comments
 
-markdown: kramdown
-kramdown:
-    highlighter: rouge
-    syntax_highlighter_opts:
-        block:
-            line_numbers: true
-
 ### Exclude from processing ###
 exclude:
   - README.md
