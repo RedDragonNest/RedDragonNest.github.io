@@ -167,9 +167,9 @@ export PATH=/Users/dragon/Documents/flutter/bin:$PATH  <- [pwd결과]/flutter/bi
 
 + SDK 경로를 잘 설정했으나, 디바이스만 잡아지고 실행버튼이 활성화되지 않을 경우
 
-{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2022-12-22-install-flutter/install_flutter_12.png" %}
-
   이를 해결하기 위해서는 실행하고자 하는 '-.dart' (아마 runApp 함수가 들어있는) 파일에서 우클릭 후 Run '-.dart'를 클릭하면 실행되면서 자동으로 Run버튼도 활성화된다.   
+  
+{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2022-12-22-install-flutter/install_flutter_12.png" %}
 
 {% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2022-12-22-install-flutter/install_flutter_13.png" %}
 
