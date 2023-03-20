@@ -43,7 +43,7 @@ class SampleViewModel() : ViewModel() {
 #### 단점
 
 * UiModel이 다음 화면을 위한 불필요한 필드를 추가로 갖고 있어야 한다.   
-	만약 다음 화면에서 기존 UiModel을 재사용해야 한다면 다음 화면에서 필요한 불필요한 필드를 먼저 정의해놔야 한다. 많이 필요해지면 Model 혹은 Model과 다를바 없어질 지 모른다.   
+	만약 다음 화면에서 기존 UiModel을 재사용해야 한다면 다음 화면에서 필요한 불필요한 필드를 먼저 정의해놔야 한다. 많이 필요해지면 Model과 다를바 없어질 지 모른다.   
 * 선행된 UiModel을 계속 이용하지 않을 시, UiModel -> UiModel Mapper가 있어야 한다.   
 	단점 1번과 달리 선행된 UiModel을 사용하지 않을 시 첫 화면 UiModel -> 두번째 화면 UiModel의 Mapper가 필요하다.   
 * 화면간 혹은 UiModel간의 의존도가 높다.   
