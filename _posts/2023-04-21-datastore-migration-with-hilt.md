@@ -62,8 +62,8 @@ PreferencesKeys.PREFERENCE_VALUE_1와 PREFERENCE_VALUE_2의 정의를 보자.
 ```kotlin
 val prefValue1: Flow<Boolean> = 
 	context.dataStore.data
-		.catch {
-	        emit(emptyPreferences())
+	    .catch {
+	    	emit(emptyPreferences())
 	    }.map { preferences ->
 	        preferences[PREFERENCE_VALUE_1]
 	    }
@@ -90,7 +90,7 @@ context.dataStore.edit { preferences ->
 ```kotlin
 private suspend fun getPrefValue1(): Boolean =
 	context.dataStore.data
-		.catch {
+	    .catch {
 	        emit(emptyPreferences())
 	    }.map { preferences ->
 	        preferences[PREFERENCE_VALUE_1]
