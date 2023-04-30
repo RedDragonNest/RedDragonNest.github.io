@@ -215,3 +215,6 @@ DataStore로 마이그레이션하는 과정 자체는 복잡하지 않다.
 내가 이렇게 한 이유는 각 모듈간 의존 혹은 클린 아키텍처를 최대한 이용하고, 테스트 코드를 적용할 수 있게 하기 위함이다.   
 이렇게 적용한 내용은 View에서 사용하던 ViewModel에서 사용하던 상관 없이 각자 아키텍처 패턴에 맞게 사용하기 바란다.   
 나는 MVVM 패턴에서 ViewModel에 사용 중이다.   
+간단한 예제는 아래의 링크에서 확인 가능하다.
+
+[#Link](https://github.com/RedDragonNest/datastore-example)
