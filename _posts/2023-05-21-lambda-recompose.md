@@ -347,5 +347,7 @@ private fun LambdaRecomposeScreen(
 ```
 두번째 방식을 이용할 때는 단순히 논리식만 이용하지 않을때다.   
 Composable 내부에서 어떤 작업을 해야할 때 lambda를 remember로 감싸 사용하고 있다.   
+
+내가 발견하고 해결한 문제는 이로서 끝났다.   
 lambda와 recompose 사이에서 문제가 생긴 사람들에게 도움이 됐으면 하며,   
 세가지 방법을 기억하고 사용하여 좀 더 성능좋은 안드로이드 어플리케이션을 개발했으면 좋겠다.
