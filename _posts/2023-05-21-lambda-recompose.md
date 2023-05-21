@@ -57,8 +57,8 @@ private fun LambdaRecomposeScreen() {
     }
 }
 ```
-{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-05-21-lambda-recompose/lamda-recompose_1.png" caption="테스트 환경" %}
-{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-05-21-lambda-recompose/lamda-recompose_2.png" caption="recompose count 확인" %}
+{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-05-21-lambda-recompose/lambda-recompose_1.png" caption="테스트 환경" %}
+{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-05-21-lambda-recompose/lambda-recompose_2.png" caption="recompose count 확인" %}
 
 위는 간단하게 세개의 TextField가 각각 값을 받아 저장하는 코드다.   
 해당 코드는 ViewModel없이, 즉 복잡한 논리식 없이 View단으로만 처리한 내용이며 크게 문제될 것은 없다.   
@@ -125,7 +125,7 @@ class MainViewModel : ViewModel() {
     }
 }
 ```
-{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-05-21-lambda-recompose/lamda-recompose_3.png" caption="의도치 않은 전체 recompose" %}
+{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-05-21-lambda-recompose/lambda-recompose_3.png" caption="의도치 않은 전체 recompose" %}
 ViewModel에서 각각 Flow로 value1 ~ value3으로 선언.   
 onValueChange 함수들을 이용하여 값을 저장.   
 값이 변경되면 View단에서 해당 Flow를 구독하게 만들었다.   
@@ -204,7 +204,7 @@ private fun LambdaRecomposeScreen(
     }
 }
 ```
-{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-05-21-lambda-recompose/lamda-recompose_4.png" caption="첫번째 해결방법 recompose 확인" %}
+{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-05-21-lambda-recompose/lambda-recompose_4.png" caption="첫번째 해결방법 recompose 확인" %}
 첫번째 해결방법은 lambda를 재생성되지 않게 composable 외부로 빼는 것이다.   
 일명 호이스팅이라고 하며, 호이스팅을 최상단까지 올려서 주입하는 방식으로 처리한다.   
 recompose 표를 보면 확실한 처리방법이라고 볼 수 있다.   
@@ -247,7 +247,7 @@ private fun LambdaRecomposeScreen(
     }
 }
 ```
-{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-05-21-lambda-recompose/lamda-recompose_5.png" caption="두번째 해결방법 recompose 확인" %}
+{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-05-21-lambda-recompose/lambda-recompose_5.png" caption="두번째 해결방법 recompose 확인" %}
 lambda를 remember로 감싸주는 방법이다.   
 변수뿐 아니라 함수도 가능하다.
 
@@ -283,7 +283,7 @@ private fun LambdaRecomposeScreen(
     }
 }
 ```
-{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-05-21-lambda-recompose/lamda-recompose_6.png" caption="세번째 해결방법 recompose 확인" %}
+{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-05-21-lambda-recompose/lambda-recompose_6.png" caption="세번째 해결방법 recompose 확인" %}
 마지막으로는 ViewModel의 함수를 직접 참조하는 것이다.   
 이렇게 되면 lambda를 따로 생성하지 않고 바로 ViewModel의 내부함수로 바로 접근하게 되니,   
 recompose의 복잡한 방식을 크게 이해하지 않고 사용할 수 있다.   
