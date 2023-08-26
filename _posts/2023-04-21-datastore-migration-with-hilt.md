@@ -110,7 +110,11 @@ private suspend fun getPrefValue1(): Boolean =
 DataStoreExtension.kt
 
 suspend fun FlowCollector<Preferences>.recoverOrThrow(throwable: Throwable) {
-    emit(emptyPreferences())
+    if (throwable is IOException) {
+        emit(emptyPreferences())
+    } else {
+        throw throwable
+    }
 }
 
 suspend fun DataStore<Preferences>.clear() {
