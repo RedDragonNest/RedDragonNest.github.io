@@ -98,5 +98,5 @@ Box(
 Modifier에 정의해놓은 isShown을 사용하여 이벤트를 받을 수 있다.   
 
 ## 결과
-{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-08-27-composable-visible-event/composable-visible-event-visible-calc.mp4" caption="화면에 보이자마자 이벤트 발생" %}
-{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-08-27-composable-visible-event/composable-visible-event-visible-center-calc.mp4" caption="화면에 중앙값이 보이면 이벤트 발생" %}
+{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-08-27-composable-visible-event/composable-visible-event-visible-calc.gif" caption="화면에 보이자마자 이벤트 발생" %}
+{% include elements/figure.html image="https://raw.githubusercontent.com/RedDragonNest/RedDragonNest.github.io/main/assets/2023-08-27-composable-visible-event/composable-visible-event-visible-center-calc.gif" caption="화면에 중앙값이 보이면 이벤트 발생" %}
